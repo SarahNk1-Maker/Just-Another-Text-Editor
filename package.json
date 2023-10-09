@@ -1,0 +1,25 @@
+{
+  "name": "jate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "start:dev": "npm install", 
+    "start": "npm start", 
+    "build": "npm run build",
+    "install": "npm install", 
+    "client": "cd client && npm start" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
+
