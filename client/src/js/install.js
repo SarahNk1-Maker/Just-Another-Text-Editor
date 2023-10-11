@@ -1,4 +1,4 @@
-const butInstall = document.getElementById('buttonInstall');
+const buttonInstall = document.getElementById('buttonInstall');
 
 let deferredPrompt;
 
@@ -9,11 +9,11 @@ window.addEventListener('beforeinstallprompt', (event) => {
   // Stash the event so it can be triggered later
   deferredPrompt = event;
   // Show the install button
-  butInstall.style.display = 'block';
+  buttonInstall.style.display = 'block';
 });
 
 // Implement a click event handler on the `butInstall` element
-butInstall.addEventListener('click', async () => {
+buttonInstall.addEventListener('click', async () => {
   if (deferredPrompt) {
     // Trigger the installation prompt
     deferredPrompt.prompt();
@@ -27,13 +27,13 @@ butInstall.addEventListener('click', async () => {
     // Reset the deferredPrompt variable
     deferredPrompt = null;
     // Hide the install button
-    butInstall.style.display = 'none';
+    buttonInstall.style.display = 'none';
   }
 });
 
 // Handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
+
   console.log('App installed by the user');
-  // You can add any additional logic you need here
 });
 

@@ -4,9 +4,9 @@ import { openDB } from 'idb';
 const initDB = async () => {
   try {
     const db = await openDB('jate', 1, {
-      upgrade(db) {
+      upgrade(db,oldVersion,newVersion,transaction) {
         if (!db.objectStoreNames.contains('jate')) {
-          db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
+          const store = db.createObjectStore('jate', { keyPath: 'id', autoIncrement: true });
           console.log('jate database created');
         }
       },
