@@ -24,11 +24,13 @@ module.exports = () => {
       
       // WebpackPwaManifest for generating manifest.json
       new WebpackPwaManifest({
-        name: 'Your PWA Name',
-        short_name: 'PWA Short Name',
-        description: 'Description of your PWA',
+        name: 'text editor',
+        short_name: 'JATE',
+        description: 'Text Editor',
         background_color: '#ffffff',
         theme_color: '#007BFF',
+        start_url: '/index.html',
+
         icons: [
           {
             src: path.resolve('src/images/icon.png'),
