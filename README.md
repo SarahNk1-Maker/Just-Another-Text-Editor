@@ -34,4 +34,11 @@ N/A
 For questions or feedback, please contact me via GitHub or email:
 - GitHub: [SarahNk1-maker](https://github.com/SarahNk1-maker)
 - Email: sarahnaveed216@gmail.com
-  
+
+## Demo 
+
+  ![Alt text](<Screenshot 2023-10-11 at 4.50.28 PM.png>)
+
+  ![Alt text](<Screenshot 2023-10-11 at 4.50.12 PM.png>)
+
+  ![Alt text](<Screenshot 2023-10-11 at 4.49.26 PM.png>)
